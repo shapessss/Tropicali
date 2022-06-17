@@ -1,0 +1,35 @@
+{
+  "name": "tropicali",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shapessss/tropicali.git"
+  },
+  "author": "Jordan Delgado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shapessss/tropicali/issues"
+  },
+  "homepage": "https://github.com/shapessss/tropicali#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "graceful-fs": "^4.2.10",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "natives": "^1.1.6",
+    "node-sass": "^7.0.1",
+    "undertaker": "^1.3.0",
+    "vinyl-fs": "^2.4.1"
+  },
+  "dependencies": {
+    "sass": "^1.52.3"
+  }
+}
