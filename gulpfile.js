@@ -7,6 +7,9 @@ const browserSync = require('browser-sync').create();
 
 const imagemin = require('gulp-imagemin');
 
+const ghpages = require('gh-pages');
+
+
 sass.compiler = require('node-sass');
 
 gulp.task("sass", function () {
@@ -52,6 +55,10 @@ gulp.task("watch", function () {
     gulp.watch("src/css/app.scss", gulp.series("sass"))
     gulp.watch("src/fonts/*", gulp.series("fonts"))
     gulp.watch("src/img", gulp.series("images"))
+})
+
+gulp.task("deploy", async function () {
+    ghpages.publish("dist")
 })
 
 gulp.task('default', gulp.series("html", "sass", "fonts", "images", "watch"));
